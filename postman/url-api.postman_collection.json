@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "c7653ce5-9329-458f-94f8-64f9ab2327a6",
+		"name": "url-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13153266"
+	},
+	"item": [
+		{
+			"name": "get urls",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"urls\":[\n        \"http://universities.hipolabs.com/search?country=United+States\",\n        \"https://datausa.io/api/data?drilldowns=Nation&measures=Population\"\n    ],\n    \"key\": \"state-province\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/urls",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"urls"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
